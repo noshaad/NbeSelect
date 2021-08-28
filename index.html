@@ -6,12 +6,38 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>simple Select to have as padding</title>
+	<script src="jquery.js" ></script>
 </head>
 <body>
 
 <select>
-<option></option>
+<option>awdawdawd</option>
 </select>
 
+
+<script>
+
+	class NbeSelect{
+		constructor(slector) {
+			this.el = slector;
+			this.init()
+		}
+		init = ()=>{
+			$(this.el).each(function (){
+				$(this).wrap('<div class="nbe-dp-wrapper"></div>')
+				$(this).find('option').each(function (){
+
+				})
+			})
+		}
+	}
+
+
+	$(document).ready(() => {
+		let dawdwa= new NbeSelect('select')
+	})
+
+
+</script>
 </body>
 </html>
